@@ -8,8 +8,8 @@ h1{
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr 3fr ;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 7fr ;
 }
 .sidebar{
     display: grid;
@@ -56,11 +56,15 @@ li, a{
 }
 .main{
     display: grid;
-    grid-template-columns: 2fr 2fr ;
+    grid-template-columns: 2fr 2fr 2fr ;
     grid-template-rows: 1fr 3fr 3fr 3fr;
     background-color: rgb(243, 243, 243);
     grid-column: 2/ 3;
     grid-row: 2/4;
+}
+.main>h1{
+    padding-left:20px;
+    padding-top: 10px;
 }
 input{
     height: 20px;
@@ -83,4 +87,15 @@ input{
     grid-row: 2;
     justify-content: space-evenly;
     margin-top: 50px;
+}
+.announcements{
+    grid-column:3/4;
+    grid-row: 2/4;
+    background-color:rgb(243, 243, 243)
+}
+.announcements>h1{
+    padding: 10px;
+}
+.announcements>.card{
+    margin-top: 20px;
 }
